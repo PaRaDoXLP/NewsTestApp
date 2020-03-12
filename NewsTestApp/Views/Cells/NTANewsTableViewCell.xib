@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="385" id="KGk-i7-Jjw" customClass="NTANewsTableViewCell" customModule="NewsTestApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="385"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="385"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Bu-7e-H9M">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="192.5"/>
+                    </imageView>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="n9n-qY-e5g">
+                        <rect key="frame" x="141.5" y="78" width="37" height="37"/>
+                        <color key="color" red="0.31764705879999999" green="0.53333333329999999" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </activityIndicatorView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jcw-v1-gAV">
+                        <rect key="frame" x="15" y="200.5" width="290" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="d4z-jm-rzz"/>
+                        </constraints>
+                        <string key="text">108° - Dell Inspiron 15 3000 14 or 15.6-inch FHD Anti-Glare Laptop - Intel Pentium Silver N5000, 4 GB RAM, 128 GB SSD - £249 @ Amazon</string>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJc-qa-diK">
+                        <rect key="frame" x="273" y="355" width="32" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="bvV-6i-BVZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N82-bi-vXE">
+                        <rect key="frame" x="15" y="248.5" width="290" height="98.5"/>
+                        <string key="text">With a smart phones in their pocket, most people don’t bother carrying a traditional camera anymore. For most, the single, double or even triple cameras on modern phones are great for making memories. Many Android and some iOS users have chosen to store their…</string>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2Bu-7e-H9M" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="4Yb-Lt-1Ru"/>
+                    <constraint firstItem="2Bu-7e-H9M" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="6mH-i1-jVP"/>
+                    <constraint firstAttribute="trailing" secondItem="2Bu-7e-H9M" secondAttribute="trailing" id="9ic-bI-Dft"/>
+                    <constraint firstAttribute="bottom" secondItem="fJc-qa-diK" secondAttribute="bottom" constant="10" id="Gmb-g6-OoG"/>
+                    <constraint firstItem="n9n-qY-e5g" firstAttribute="centerX" secondItem="2Bu-7e-H9M" secondAttribute="centerX" id="LEb-bO-jet"/>
+                    <constraint firstItem="fJc-qa-diK" firstAttribute="top" secondItem="N82-bi-vXE" secondAttribute="bottom" constant="8" id="Pf6-DR-hL9"/>
+                    <constraint firstItem="n9n-qY-e5g" firstAttribute="centerY" secondItem="2Bu-7e-H9M" secondAttribute="centerY" id="UhL-iY-OD8"/>
+                    <constraint firstAttribute="trailing" secondItem="Jcw-v1-gAV" secondAttribute="trailing" constant="15" id="Z9A-7O-4c3"/>
+                    <constraint firstItem="Jcw-v1-gAV" firstAttribute="top" secondItem="2Bu-7e-H9M" secondAttribute="bottom" constant="8" id="aTw-9e-FHA"/>
+                    <constraint firstItem="N82-bi-vXE" firstAttribute="leading" secondItem="Jcw-v1-gAV" secondAttribute="leading" id="bqs-z2-Sx2"/>
+                    <constraint firstItem="Jcw-v1-gAV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="d8t-Ji-umo"/>
+                    <constraint firstItem="N82-bi-vXE" firstAttribute="trailing" secondItem="Jcw-v1-gAV" secondAttribute="trailing" id="eBf-XL-6yr"/>
+                    <constraint firstItem="2Bu-7e-H9M" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.5" id="gVr-b1-vgv"/>
+                    <constraint firstItem="fJc-qa-diK" firstAttribute="trailing" secondItem="Jcw-v1-gAV" secondAttribute="trailing" id="vSf-mF-rdN"/>
+                    <constraint firstItem="N82-bi-vXE" firstAttribute="top" secondItem="Jcw-v1-gAV" secondAttribute="bottom" constant="8" id="waC-bo-7df"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="loadActivityIndicator" destination="n9n-qY-e5g" id="4g2-no-SP9"/>
+                <outlet property="newsDateLable" destination="fJc-qa-diK" id="XAG-Vn-85l"/>
+                <outlet property="newsDescriptionLabel" destination="N82-bi-vXE" id="dy7-BP-kdm"/>
+                <outlet property="newsImageView" destination="2Bu-7e-H9M" id="REK-NO-Luk"/>
+                <outlet property="newsTitleLabel" destination="Jcw-v1-gAV" id="n2W-NL-Jie"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="158.37053571428569"/>
+        </tableViewCell>
+    </objects>
+</document>
